@@ -1,16 +1,13 @@
-            .img-fluid {
-                max-width: 25%;
-                height: auto;
-            }
-            
             body,
             html {
                 height: 100%;
+                font-family: 'Lustria', serif;
             }
             
             * {
                 box-sizing: border-box;
             }
+            /* background */
             
             .bg-image {
                 /* The image used */
@@ -44,8 +41,24 @@
                 padding: 20px;
                 text-align: center;
             }
+            /* logo */
+            
+            .img-fluid {
+                max-width: 25%;
+                height: auto;
+            }
             
             .central {
                 min-width: 85%;
                 min-height: 85%;
+            }
+            
+            .nav-item {
+                display: inline-block;
+                line-height: inherit;
+            }
+            /* pictures menu */
+            
+            .img-thumbnail {
+                align-content: center;
             }
