@@ -6,6 +6,9 @@
 body,
 html {
     height: 100%;
+    text-align: justify;
+    text-align: center;
+    font-family: "lustra";
 }
 
 * {
@@ -52,7 +55,13 @@ html {
     min-height: 85%;
 }
 
-.carousel-item {
-    width: 1100px;
-    height: 625px;
+.img-responsive {
+    width: auto;
+    height: 55%;
+    border: solid rgb(71, 66, 66) 5px;
+}
+
+.w-100 {
+    width: 100% !important;
+    height: 75vh;
 }
