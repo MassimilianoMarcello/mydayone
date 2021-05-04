@@ -17,7 +17,7 @@ html {
 
 .bg-image {
     /* The image used */
-    background-image: url("/mydayone/ProjectBootstrap/Images/adolfo-felix-l728d7AJnXM-unsplash.jpg");
+    background-image: url("/mydayone/Restaurant/Images/adolfo-felix-l728d7AJnXM-unsplash.jpg");
     /* Add the blur effect */
     filter: blur(8px);
     -webkit-filter: blur(3px);
