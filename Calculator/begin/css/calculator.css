@@ -1,0 +1,66 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    width: 400px;
+    border: 1px solid rgb(27, 27, 27);
+}
+
+.calc-button-row {
+    background-color: black;
+    color: cornsilk;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+}
+
+.screen {
+    background-color: black;
+    color: rgb(228, 222, 231);
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px 5px;
+    font-size: 70px;
+}
+
+.calc-button {
+    background-color: rgb(134, 192, 180);
+    color: darkblue;
+    border: none;
+    font-size: 50px;
+    height: 100px;
+    flex-basis: 25.5%;
+    border: solid 1px rgb(87, 132, 139);
+}
+
+.calc-button:hover {
+    background-color: rgb(111, 170, 160);
+}
+
+.double {
+    flex-basis: 49%;
+}
+
+.triple {
+    flex-basis: 77%;
+}
+
+.calc-button:last-child {
+    background-color: rgb(124, 87, 145);
+}
+
+.calc-button:last-child:hover {
+    background-color: rgb(105, 73, 124);
+}

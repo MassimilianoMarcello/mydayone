@@ -55,4 +55,15 @@ let persone = {
 persone.printPersonInfoso();
 
 
-//another object
+//another objecte
+let i = 0
+let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let index = nums.length
+let total = 0
+while (i < index) {
+    // console.log(nums[i])
+    total += nums[i]
+        // console.log(total) console interna fa i calcoli per ogni aggiunta 
+    i++
+}
+console.log(total)

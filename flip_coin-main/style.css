@@ -1,0 +1,76 @@
+* {
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+
+.game{
+    background-image: linear-gradient(to right,#D3CCE3,#E9E4F0 );
+    border: 1px solid black ;
+    width: 300px;
+    height: 350px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 20px;
+    margin-top: 50px;
+}
+  #coin {
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    margin-bottom: 15px;
+    border: 5px solid black;
+    border-radius: 500px;
+
+  }
+  
+  #coin div {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    position: absolute;
+  }
+  
+  .front {
+   
+      background-image: url("./1euro_front.png");
+  }
+  
+  .animate-front {
+    animation: flipfront 3s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes flipfront {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(1800deg);
+    }
+  }
+  
+  .back {
+      background-image: url("./1euro_back.png");
+    transform: rotateY(-180deg);
+  }
+  
+  .animate-back {
+    animation: flipback 3s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes flipback {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(1620deg);
+    }
+  }
+  
+  
