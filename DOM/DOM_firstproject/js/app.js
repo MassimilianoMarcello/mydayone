@@ -1,3 +1,4 @@
+/*
 // window object
 let result;
 
@@ -64,7 +65,7 @@ queryselector
 queryselectorall
 
 */
-
+/*
 // getElementById
 result = document.getElementById("add")
 result = document.getElementById('password')
@@ -98,18 +99,18 @@ let formGroup = document.querySelectorAll('.form-group') // NODELIST / ARRAY/ OB
 // })
 
 let buttons = document.querySelectorAll('button')
-// console.log(buttons)
+    // console.log(buttons)
 
-for(btn of buttons){
-    btn.innerHTML="test button"
+for (btn of buttons) {
+    btn.innerHTML = "test button"
 }
 
 let allText = document.querySelectorAll('.card-title')
 
-allText.forEach(text=>text.innerHTML="HELLO WORLD!")
+allText.forEach(text => text.innerHTML = "HELLO WORLD!")
 
-allText.forEach(text=>{
-    text.addEventListener('click',(e)=>{
+allText.forEach(text => {
+    text.addEventListener('click', (e) => {
         alert('hello friend!')
     })
 })
@@ -117,5 +118,22 @@ allText.forEach(text=>{
 
 
 
-console.log(result)
+console.log(result)                      */
+result = document.getElementById('collapsibleNavId')
 
+result = document.getElementsByClassName("btn")
+
+
+
+// let [a, b, c] = document.getElementsByClassName("btn")
+// result[a] stavo provando il destructuring a prendere 3 bottoni selezionandoli con l'elemento ma non funziona
+
+let formGroup = document.querySelectorAll(".form-group")
+    // console.log(typeof result);   analizzandolo con type of mi dice chesi trattta di un oggetto
+
+
+
+formGroup.forEach(element => {
+    console.log(element);
+
+});
