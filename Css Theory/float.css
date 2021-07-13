@@ -1,0 +1,117 @@
+  body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 1rem;
+      padding: 0 100px 0 100px;
+      margin: 10px auto;
+  }
+  
+  p {
+      border-top: solid 1px black;
+      display: inline-block;
+      display: flow-root;
+  }
+  
+  .img {
+      width: 150px;
+  }
+  
+  .img1 {
+      float: left;
+      display: inline
+  }
+  
+  .img2 {
+      float: right;
+  }
+  
+  .img3 {
+      float: left;
+  }
+  
+  .one {
+      background-color: burlywood;
+      /* overflow una caratteristica che permette di allargare il background fino all'immagine che altrimenti sarebbe bloccato */
+      overflow: auto;
+  }
+  
+  .three {
+      clear: both;
+  }
+  /* float 2 */
+  
+  .container {
+      display: inline-block;
+  }
+  
+  .div {
+      background-color: grey;
+      text-align: center;
+      width: 50px auto;
+  }
+  
+  .span {
+      background-color: violet;
+      width: 4em;
+      height: 6em;
+  }
+  /* Float and clear start  */
+  
+  .container2 {
+      width: 600px;
+      margin: 0 auto;
+      border: 5px solid black;
+  }
+  /* -------------------------------------------------------------- */
+  /* CLEARFIX HACK Un'altro modo per fare clear:applicare queste caretteristiche al container */
+  
+  .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  /* THE OVERFLOW PROPERTY   and   DISPLaY FLOW ROOT */
+  
+  .container2 {
+      overflow: hidden;
+      display: flow-root;
+  }
+  /* --------------------------------------------------------- */
+  
+  p {
+      background: #CDCDCD;
+      padding: 10px;
+  }
+  
+  img {
+      float: left;
+      margin: 10px;
+  }
+  
+  .clear {
+      clear: both;
+      /* clears left and right floats */
+  }
+  /* Last float example */
+  
+  .row {
+      background-color: red;
+      margin-left: 20px;
+      border-radius: 1em;
+      width: 21em;
+  }
+  /* questo l'esempio della formula clear*/
+  
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  
+  .col1 {
+      float: left;
+      background-color: rgb(200, 255, 0);
+      margin: 1em;
+      padding: 1rem;
+      border-radius: 1em;
+      text-align: center;
+  }
