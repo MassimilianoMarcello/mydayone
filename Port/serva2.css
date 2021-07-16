@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.main-nav {
+  background-color: #f0eef0;
+  border-bottom: solid #abcfd0 4px
+  ;
+}
+.container {
+  background-color: #fcf9f9;
+  display: flex;
+  padding: 0.5rem;
+}
+nav a {
+  background-color: #fcf9f9;
+  font-family: 'Source Sans Pro';
+  font-size: 1.2rem;
+  color: rgb(16, 102, 102);
+  padding: 0.2rem;
+  
+  /* line heigt serve a modificare la larghezza fra le righe */
+  
+  margin-left: auto;
+  text-decoration: none;
+}
+.nav-name {
+  width: 50%;
+}

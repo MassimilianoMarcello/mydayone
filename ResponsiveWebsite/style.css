@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+ul {
+  /* rimuove i puntini al fianco del link */
+  list-style-position: none;
+
+}
+
+a {
+  /* rimouve la linea sotto il link */
+  text-decoration: none;
+  
+}
+h1,
+h2 {
+  font-weight: 300;
+  /* line heigt serve a modificare la larghezza fra le righe */
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+img{
+    /* modifca questa caratteristica e vedi che succede: dovrebbe essere per mostrare tutta l'immagine */
+    width: 100%;
+}
+/* il div con class navbar che n contiene quello con class container */
+.navbar{
+    background-color:#dae0d7;
+    color: lightyellow;
+    text-shadow: 1px 1px #8b8f89;
+    height: 70px;
+    
+
+}
+.container{
+    /* stabilisco la lunghezza massima del container interno al nav */
+    max-width: 1100px;
+    /* quest impostazione di margine mi permette di tenere il container al centro con uguale distanza ai lati */
+    margin: 0 auto;
+    /* background: lightyellow; */
+    /* con le impostazioni generali ho messo un po di margine in alto e lo tolgo con overflow */
+overflow: auto;
+/*  */
+padding: 0 40px;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,10 @@
+.container {
+    list-style-type: none;
+    display: flex;
+    background-color: gold;
+}
+
+.item {
+    background-color: wheat;
+    border: solid 1px #999;
+}
