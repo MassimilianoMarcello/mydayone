@@ -1,29 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #f6fcff;
 }
+/* ===============================================
+============NAVBAR================================ */
 .main-nav {
-  background-color: #f0eef0;
-  border-bottom: solid #abcfd0 4px
-  ;
+  margin-top: 0;
+  padding: 0.2rem;
 }
 .container {
-  background-color: #fcf9f9;
   display: flex;
-  padding: 0.5rem;
+  list-style-type: none;
+  
 }
-nav a {
-  background-color: #fcf9f9;
-  font-family: 'Source Sans Pro';
-  font-size: 1.2rem;
-  color: rgb(16, 102, 102);
-  padding: 0.2rem;
-  
-  /* line heigt serve a modificare la larghezza fra le righe */
-  
-  margin-left: auto;
+.item {
+  margin-right: 1rem;
+}
+.item a {
   text-decoration: none;
+  color: #1caed3;
+  font-size: 1.2rem;
 }
-.nav-name {
-  width: 50%;
+.item-home {
+  margin-right: auto;
+  margin-left: -2.5rem;
 }
+
+/* ===============================================
+Main content========================================= */
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 2rem;
+  
+}
+
+.flex-item:nth-child(1) {
+  flex: 0 1 auto;
+  align-self: auto;
+  padding-right: 2rem;
+  background-color: #ffffff;
+  border: 1px solid rgba(157, 215, 245, 0.884);
+  box-shadow: 0.5px 0.5px 1px #aaa6a0;
+  padding: 1rem;
+}
+ 
+
+.flex-item:nth-child(2) {
+  flex: 0 1 auto;
+  align-self: auto;
+  padding-left: 2rem;
+  
+  background-color: #ffffff;
+  border: 1px solid rgba(157, 215, 245, 0.884);
+  box-shadow: 0.5px 0.5px 1px #aaa6a0;
+  padding: 1rem;
+}
+span{color: #1caed3;}
