@@ -1,0 +1,134 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: rgb(252, 249, 249);
+}
+/* ===============================================
+============NAVBAR================================ */
+.main-nav {
+  margin-top: -10px;
+}
+.flex-container1 {
+  display: flex;
+  list-style-type: none;
+  border-bottom: 0.1px solid #bbbfbd;
+  
+}
+.item {
+  margin-right: 1rem;
+}
+.item a {
+  text-decoration: none;
+  color:#3f85ab;
+  font-size: 1rem;
+}
+.item-home {
+  margin-right: auto;
+  margin-left: -2.5rem;
+}
+
+/* ===============================================
+Main content========================================= */
+
+.flex-container2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.flex-item:nth-child(1) {
+  flex: 0 1 auto;
+  align-self: auto;
+  padding-right: 2rem;
+  background-color: #ffffff;
+  border: 1px solid rgba(157, 215, 245, 0.884);
+  border-radius: 1px;
+  box-shadow: 0.5px 0.5px 1px #aaa6a0;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.flex-item:nth-child(2) {
+  flex: 0 1 auto;
+  align-self: auto;
+  padding-left: 2rem;
+  margin: 2rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(157, 215, 245, 0.884);
+  box-shadow: 0.5px 0.5px 1px #aaa6a0;
+  padding: 1rem;
+}
+span {
+  color: #3f85ab;
+}
+
+/* /* ==========================================================
+================grid project section======================== */
+/* .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2em 2em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "vertical-1 orizzontal-1 orizzontal-1"
+    "vertical-1 center vertical-2"
+    "orizzontal-2 orizzontal-2 vertical-2";
+}
+
+.vertical-1 {
+  grid-area: vertical-1;
+  background-color: rgba(157, 215, 245, 0.884);
+}
+
+.vertical-2 {
+  grid-area: vertical-2;
+  background-color: rgba(157, 215, 245, 0.884);
+}
+
+.center {
+  grid-area: center;
+  background-color: rgba(17, 60, 82, 0.884);
+}
+
+.orizzontal-2 {
+  grid-area: orizzontal-2;
+  background-color: rgba(13, 61, 85, 0.884);
+}
+
+.orizzontal-1 {
+  grid-area: orizzontal-1;
+  background-color: rgba(157, 232, 245, 0.884);
+}
+
+.stylo {
+  background-color: rgba(157, 215, 245, 0.884);
+  border-radius: 5em;
+  margin-right: 4rem;
+
+  width: 0.1rem;
+  height: 1.5rem;
+} */ 
+/* ================================================================
+=======================footer */
+
+
+footer{
+  background-color: #3f85ab;
+  height: 4rem;
+ overflow:inherit;
+ height: 100%;
+ margin:0 -12px;
+ font-size: 90%;
+    padding: 1rem 2rem;
+ color: #fcf9f9;
+ 
+}

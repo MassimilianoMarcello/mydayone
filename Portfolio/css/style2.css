@@ -1,0 +1,45 @@
+ body{
+    margin: 15px;
+    padding: 0;
+  }
+  
+  .bg{
+    background: url(../images/ice.jpg);
+  }
+  
+  .container{
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr ;
+  }
+  
+  .container div{
+    height: 110px;
+    width: 100%; 
+     background-size: cover;
+    background-attachment: fixed;
+    font-size: 100px;
+  }
+  
+  .container div:nth-child(1){
+    grid-row-start: row1-start;
+    grid-row-end: 3;
+  } 
+  
+  .container div:nth-child(7){
+    grid-template-rows: span 2;
+    
+  } 
+  
+ .container div:nth-child(11){
+    grid-row-start: row1-start;
+    grid-row-end: 3;
+  }
+  
+  .bg5{background: red;
+    color: white;
+grid-row-start:1 /3;} 
+
+
+ 
