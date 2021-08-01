@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   background-color: rgb(252, 249, 249);
 }
 /* ===============================================
@@ -14,23 +14,11 @@ body {
   list-style-type: none;
   border-bottom: 0.1px solid #bbbfbd;
 }
-.item {
-  margin-right: 1rem;
-}
-.item a {
-  text-decoration: none;
-  color: #3f85ab;
-  font-size: 1rem;
-}
-.item-home {
-  margin-right: auto;
-  margin-left: -2.5rem;
-}
 
 /* variables */
 :root {
-  --primary: #ffc636;
-  --secondary: #3f85ab;
+  --primary: #3d3d3b;
+  --secondary: #19cfcf;
 }
 
 /* reset */
@@ -49,9 +37,15 @@ li {
 
 /* base styles */
 body {
-  background: var(--secondary);
+  background: rgb(185, 194, 196);
+  background: radial-gradient(
+    circle,
+    rgb(143, 155, 170) 0%,
+    rgb(215,233,255) 50%
+  );
+  /* background: var(--secondary); */
   overflow-x: hidden;
-  font-family: "Rubik Regular";
+  font-family: "Ubuntu";
 }
 .button {
   background: none;
@@ -63,6 +57,7 @@ body {
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
   display: inline-block;
   font-size: 1em;
+  text-align: center;
 }
 .button:hover {
   color: #222;
@@ -74,27 +69,27 @@ textarea {
   padding: 10px 16px;
   border-radius: 20px;
   border: 2px solid #9893d8;
-  color: #f2f2f2;
+  color: #8d95e2;
   font-size: 1em;
 }
 
 /* fonts */
-@font-face {
+/* @font-face {
   font-family: "Rubik Regular";
   src: url("assets/fonts/Rubik-Regular.ttf") format("ttf");
-}
+} */
 h1,
 h2,
 h3,
 h4 {
-  color: #dddbff;
+  color: #0b0b0c;
   font-weight: normal;
-  line-height: 1.4em;
+  line-height: 1.6em;
 }
 p,
 a,
 li {
-  color: #9893d8;
+  color: #0f87d8;
   line-height: 1.4em;
   font-size: 1em;
 }
@@ -111,9 +106,16 @@ h4 {
 .leading {
   font-size: 1.1em;
 }
+span{
+  color: #004aad;
+}
+.opposite-color{color: #d7e9ff;}
 
-/* mobile styles */
-
+/* =============================================================================
+===================MOBILE STYLES================================================== */
+.logo {
+  width: 100px;
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -122,6 +124,7 @@ h4 {
 }
 .site-nav {
   margin: 0 20px;
+  background-color: #d7e9ff;
 }
 .site-nav h1 {
   grid-column: 1/4;
@@ -150,7 +153,7 @@ h4 {
   border-radius: 100px;
 }
 #portfolio {
-  background: url(bckg\ style.png);
+  background: url(./images/bckg\ style.png);
 
   background-size: cover;
   background-size: 33rem;
@@ -176,11 +179,11 @@ h4 {
   align-self: center;
 }
 .projects h4 {
-  color: #9994f7;
+  color: #2016ee;
 }
 #skills {
   padding: 30px 20px;
-  background: #07083e;
+  background: #d7e9ff;
 }
 #skills h3 {
   text-align: center;
@@ -190,7 +193,7 @@ h4 {
 }
 #skills li {
   padding: 10px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(10, 145, 207, 0.2);
   grid-column: span 4;
   text-align: center;
 }
@@ -231,8 +234,8 @@ h4 {
 }
 footer {
   padding: 30px 20px;
-  background-color: #14153d;
-  background-image: url(assets/footer_image.png);
+  background-color: #d7e9ff;
+  background-image: url(/mydayone/Portfolios/images/v.png);
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: top center;
@@ -255,15 +258,24 @@ footer img {
 
 /* small tablet styles */
 @media screen and (min-width: 620px) {
+  .grid {
+    box-sizing: border-box;
+  }
   .welcome-text {
-    grid-column: 1/5;
+    grid-column:1/5;
+    
+  }
+  #portfolio {
+    background: url(./images/bckg\ style.png);
+ background-size: cover;
+    background-size: 63rem;
+    background-repeat: no-repeat;
+    /* background-position: bottom; */
+    padding: 30px 20px;
   }
   .me-img {
-    grid-column: 5/9;
-  }
-  .welcome-img img {
-    width: 25%;
-    border-radius: 50%;
+    grid-column: 6/8;
+    
   }
 
   .projects {
@@ -287,11 +299,16 @@ footer img {
   }
   #skills {
     padding: 30px 100px;
+   
   }
   footer {
     background-size: 20%;
   }
+  .grid-item {
+  
+  }
 }
+
 
 /* large tablet & laptop styles */
 @media screen and (min-width: 960px) {
