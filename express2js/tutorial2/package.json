@@ -1,0 +1,12 @@
+{
+  "name": "tutorial2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "intecbrussel": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
