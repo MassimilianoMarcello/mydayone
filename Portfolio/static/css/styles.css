@@ -5,6 +5,10 @@ body {
 }
 /* ===============================================
 ============NAVBAR================================ */
+.kiss{
+padding: 50px;
+background-color: #d7e9ff;
+}
 
 .main-nav {
   margin-top: 10px;
@@ -434,4 +438,3 @@ footer img {
   footer img {
     width: 30px;
   }
-}
