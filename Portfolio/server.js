@@ -5,8 +5,8 @@ const path = require('path');
 
 // const routes= require('./routes');
 
-app.use(express.static(path.join(__dirname, './static')));
-
+// app.use(express.static(path.join(__dirname, 'static')));
+app.use(express.static('public'));
 // app.use('/', routes);
 
 app.set('view engine','ejs');
@@ -24,6 +24,19 @@ app.get('/projects', (req, res) => {
 app.get('/contact', (req, res) => {
   res.render('contact')
 })
+// app mail
+// Configuring our data parsing
+app.use(express.urlencoded({
+  extend: false
+}));
+app.use(express.json());
+
+app.post('/email', (req, res) => {
+  //Send an email here but currently dummy email
+  console.log('Data:', req.body);
+  res.json({message: 'Message received!'})
+});
+
 
 
 // listen port
