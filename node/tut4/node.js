@@ -1,4 +1,5 @@
-const chalk = require('chalk')
+const chalk = require('chalk');
+const { argv } = require('yargs');
 const yargs =require('yargs')
 // console.log(chalk.green('Success!'));
 
@@ -16,6 +17,32 @@ yargs.command({
         console.log("read a new note");
     }
 })
+
+yargs.command({
+command:'add',
+describe:'Add a new note',
+builder:{
+    title:{
+        describe:'note title',
+        demandOption:true,
+        type:'string'
+    },
+    body:{
+        describe:'note body',
+        demandOption:true ,
+        type:'string'
+    }
+},
+handler:function(argv){
+    console.log("title:"+argv.title);
+    console.log("body:"+argv.body);
+}
+})
+
+// node node.js --title='il mio titolo' --body="il mio body"// questo il commento scritto nella riga di comando
+
+yargs.parse()
+
 
 
 
