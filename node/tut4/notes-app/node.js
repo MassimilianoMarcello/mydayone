@@ -1,5 +1,5 @@
 const chalk = require('chalk');
-const { argv } = require('yargs');
+const notes=require('./notes.js')
 const yargs =require('yargs')
 // console.log(chalk.green('Success!'));
 
@@ -34,8 +34,7 @@ builder:{
     }
 },
 handler:function(argv){
-    console.log("title:"+argv.title);
-    console.log("body:"+argv.body);
+    notes.addNote(argv.title,argv.body)
 }
 })
 
